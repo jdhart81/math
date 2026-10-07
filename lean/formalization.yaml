@@ -134,6 +134,12 @@ sources:
     id: ../preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf
     type: article
 
+  - title: "A power improvement in the Heilbronn triangle lower bound"
+    authors: ["OpenAI"]
+    id: ../preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/main.pdf
+    type: article
+    note: "The formalization constructs an unbounded sequence of sizes, while the paper states a result for every sufficiently large size; see docs/191.md."
+
   - title: "A product counterexample to the simplex maximum for projection-body volume"
     authors: ["OpenAI"]
     id: ../preprints/A-product-counterexample-to-the-simplex-maximum-for-projection-body-volume-September-24-2026/paper.pdf
@@ -709,6 +715,11 @@ sources:
     id: ../preprints/The-Grothendieck-homotopy-hypothesis-via-elementary-expansions-September-24-2026/paper.pdf
     type: article
 
+  - title: "The joint Dickman law for consecutive integers"
+    authors: ["OpenAI"]
+    id: ../preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/paper.pdf
+    type: article
+
   - title: "The Kirchberg–Rørdam character criterion"
     authors: ["OpenAI"]
     id: ../preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/paper.pdf
@@ -1219,6 +1230,14 @@ status:
       declaration: OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_seven_eighths_lt_re
       file: OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean
 
+    - comparator_config: ComparatorChallenges/HeilbronnTriangle.json
+      declaration: OAI.Problem355.heilbronn_power_lower_bound
+      file: OAI/Geometry/HeilbronnTriangle/Main.lean
+
+    - comparator_config: ComparatorChallenges/HeilbronnTriangle.json
+      declaration: OAI.Problem355.almost_n_minus_two_refuted
+      file: OAI/Geometry/HeilbronnTriangle/Main.lean
+
     - comparator_config: ComparatorChallenges/HenonEmden.json
       declaration: OAI.HenonLaneEmden.main_nonexistence
       file: OAI/Analysis/HenonEmden/Main.lean
@@ -1254,6 +1273,18 @@ status:
     - comparator_config: ComparatorChallenges/Jacobsthal.json
       declaration: OAI.Erdos970.Erdos970Final.erdos_970_quadratic
       file: OAI/NumberTheory/Jacobsthal/Conclusions/QuadraticBound.lean
+
+    - comparator_config: ComparatorChallenges/JointDickman.json
+      declaration: OAI.JointDickmanPaper.joint_law
+      file: OAI/NumberTheory/JointDickman/PaperMain.lean
+
+    - comparator_config: ComparatorChallenges/JointDickman.json
+      declaration: OAI.JointDickmanPaper.increasing_order
+      file: OAI/NumberTheory/JointDickman/PaperMain.lean
+
+    - comparator_config: ComparatorChallenges/JointDickman.json
+      declaration: OAI.JointDickmanPaper.decreasing_order
+      file: OAI/NumberTheory/JointDickman/PaperMain.lean
 
     - comparator_config: ComparatorChallenges/KMedianRecovery.json
       declaration: OAI.MetricKMedianRecovery.global_application
